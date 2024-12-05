@@ -4,10 +4,6 @@
 #include "config.h"
 #include "utils.h"
 
-void print_usage(const char *prog_name) {
-    printf("Usage: %s [--real-time | --log | --detailed] [--pid <PID>]\n", prog_name);
-}
-
 int main(int argc, char *argv[]) {
     if (argc < 2 || argc > 4) {
         print_usage(argv[0]);

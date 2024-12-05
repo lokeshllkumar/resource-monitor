@@ -3,7 +3,7 @@
 #include <string.h>
 
 void render_bar(const char *label, double value, Config *config) {
-    int width = (int)(value * config -> graph_width);
+    int width = (int)(((double)value / 100) * config -> graph_width);
     printf("%-20s | ", label);
 
     for (int i = 0; i < width; i++) {
@@ -14,7 +14,7 @@ void render_bar(const char *label, double value, Config *config) {
         printf(" ");
     }
 
-    printf(" | %.2f%%\n", value);
+    printf(" | %.4f%%\n", value);
 }
 
 void render_sparkline(double *data, int len, Config *config) {

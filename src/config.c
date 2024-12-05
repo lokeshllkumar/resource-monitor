@@ -13,7 +13,7 @@ Config load_config(const char *filename) {
     }
 
     char line[256];
-    while (gets(line, sizeof(line), file)) {
+    while (fgets(line, sizeof(line), file)) {
         if (strncmp(line, "GRAPH_WIDTH=", 12) == 0) {
             config.graph_width = atoi(line + 12);
         }

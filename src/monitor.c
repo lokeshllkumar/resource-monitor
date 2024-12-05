@@ -73,8 +73,8 @@ void monitor_process_detailed(int pid, Config *config) {
         printf("Detailed Monitoring (PID: %i)\n", pid);
         printf("=============================\n");
         printf("Name: %-15s\n", stats.name);
-        printf("CPU Usage: %.2f%%\n", stats.cpu_usage);
-        printf("Memory Usage: %.2f%%\n", stats.mem_usage);
+        printf("CPU Usage: %.4f%%\n", stats.cpu_usage);
+        printf("Memory Usage: %.4f%%\n", stats.mem_usage);
 
         sleep(1);
     }
