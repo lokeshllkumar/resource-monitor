@@ -1,5 +1,5 @@
-#ifndef PROCESS_STATS.H
-#define PROCESS_STATS.H
+#ifndef PROCESS_STATS_H
+#define PROCESS_STATS_H
 
 typedef struct {
     char name[256];
