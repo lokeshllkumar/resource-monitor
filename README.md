@@ -1,6 +1,6 @@
 # resource-monitor
 
-A minimalist CLI tool to monitor system resource usage on UNIX-based systems.
+A minimal CLI tool to monitor system resource usage on UNIX-based systems.
 
 ## Features
 
